@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Nuevo Usuario Admin</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Crear Usuario</h1>
+    </header>
+
+    <main class="admin-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-usuarios.html">Volver a Usuarios</a></li>
+            </ul>
+        </aside>
+
+        <section class="admin-content">
+            <h2>Formulario de Registro de Usuario</h2>
+            <form id="formRegistro">
+                <div class="form-group">
+                    <label for="run">RUN:</label>
+                    <input type="text" id="run" placeholder="19011022K">
+                    <span id="errorRun" class="mensaje-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                    <span id="errorNombre" class="mensaje-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos">
+                    <span id="errorApellidos" class="mensaje-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="correo">Correo:</label>
+                    <input type="email" id="correo" placeholder="ejemplo@duoc.cl">
+                    <span id="errorCorreo" class="mensaje-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion">
+                    <span id="errorDireccion" class="mensaje-error"></span>
+                </div>
+                <button type="submit" class="btn-accion">Crear Usuario</button>
+                <p id="mensajeExito" class="mensaje-exito" style="margin-top:15px;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile</p>
+    </footer>
+
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

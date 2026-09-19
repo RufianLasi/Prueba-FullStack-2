@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Carrito de Compras</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="carrito.html" class="cart-status">Carrito (<span class="cart-count">0</span>)</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Resumen de Tu Compra</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio Unitario</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaCarritoBody"></tbody>
+            </table>
+
+            <div style="margin-top: 20px; text-align: right;">
+                <h3>Total a Pagar: <span id="totalCarrito" style="color: #e94560;">$0</span></h3>
+                <button onclick="alert('¡Proceso de pago completado exitosamente!')" class="btn-accion" style="width: auto; margin-top: 10px; padding: 12px 30px;">Pagar Ahora</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

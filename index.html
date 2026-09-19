@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1> Game Store</h1>
+        <p>Tu tienda de videojuegos en Chile</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="registro.html">Registrarse</a>
+        <a href="admin-home.html">Panel Admin</a>
+        <a href="carrito.html" class="cart-status"> Carrito (<span class="cart-count">0</span>)</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Destacados de la Semana</h2>
+            <div class="contenedor-tarjetas">
+                <article class="card-juego">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.xJqlZQdmVMRG7Md9zRWLwwHaJ4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Zelda">
+                    <h3>Zelda: Tears of Kingdom</h3>
+                    <p class="precio">$59.990</p>
+                    <button onclick="agregarAlCarrito(1)" class="btn-accion">Añadir al Carrito</button>
+                </article>
+                <article class="card-juego">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.2E2ZDcX4TtmFDeEt2spBgAHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="God of War">
+                    <h3>God of War Ragnarok</h3>
+                    <p class="precio">$49.990</p>
+                    <button onclick="agregarAlCarrito(2)" class="btn-accion">Añadir al Carrito</button>
+                </article>
+            </div>
+        </section>
+
+        <section>
+            <h2> Tráiler Destacado</h2>
+            <div style="text-align: center;">
+                <iframe width="100%" height="380" src="https://www.youtube.com/embed/UAO2urG23S4" title="Tráiler de Videojuego" frameborder="0" allowfullscreen style="max-width: 700px; border-radius: 8px;"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

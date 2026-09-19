@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Editar Usuario</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Editar Usuario</h1>
+    </header>
+
+    <main class="admin-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-usuarios.html">Volver a Lista</a></li>
+            </ul>
+        </aside>
+
+        <section class="admin-content">
+            <h2>Modificar Datos de Usuario</h2>
+            <form>
+                <div class="form-group">
+                    <label>RUN:</label>
+                    <input type="text" value="19011022K" readonly style="opacity:0.7;">
+                </div>
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" value="Juan">
+                </div>
+                <div class="form-group">
+                    <label>Apellidos:</label>
+                    <input type="text" value="Pérez">
+                </div>
+                <div class="form-group">
+                    <label>Correo:</label>
+                    <input type="email" value="juan.perez@duoc.cl">
+                </div>
+                <button type="button" onclick="alert('Usuario actualizado'); window.location.href='admin-usuarios.html';" class="btn-accion">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile</p>
+    </footer>
+</body>
+</html>

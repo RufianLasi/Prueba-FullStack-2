@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Gestión Usuarios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestión de Usuarios</h1>
+    </header>
+
+    <main class="admin-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-home.html"> Inicio Panel</a></li>
+                <li><a href="admin-usuarios.html"> Gestión Usuarios</a></li>
+                <li><a href="admin-nuevo-usuario.html"> Agregar Usuario</a></li>
+            </ul>
+        </aside>
+
+        <section class="admin-content">
+            <h2>Usuarios Registrados</h2>
+            <a href="admin-nuevo-usuario.html" class="btn-accion" style="display:inline-block; text-decoration:none; width:auto; margin-bottom:15px;">+ Nuevo Usuario</a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>RUN</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19011022K</td>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@duoc.cl</td>
+                        <td>
+                            <a href="admin-mostrar-usuario.html" style="color:#28a745; margin-right:8px;">Ver</a>
+                            <a href="admin-editar-usuario.html" style="color:#ffc107; margin-right:8px;">Editar</a>
+                            <a href="#" onclick="alert('Usuario eliminado')" style="color:#ff4d4d;">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile</p>
+    </footer>
+</body>
+</html>

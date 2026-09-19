@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Administrar Productos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1> Gestión de Productos</h1>
+    </header>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="registro.html">Registrarse</a>
+        <a href="admin-home.html">Panel Admin</a>
+        <a href="carrito.html" class="cart-status"> Carrito (<span class="cart-count">0</span>)</a>
+    </nav>
+
+
+    <main class="admin-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-home.html"> Inicio Panel</a></li>
+                <li><a href="admin-productos.html"> Gestión Productos</a></li>
+                <li><a href="admin-nuevo-producto.html"> Agregar Producto</a></li>
+                <li><a href="admin-usuarios.html"> Gestión Usuarios</a></li>
+            </ul>
+        </aside>
+
+        <section class="admin-content">
+            <h2>Listado de Productos en Sistema</h2>
+            <a href="admin-nuevo-producto.html" class="btn-accion" style="display:inline-block; text-decoration:none; width:auto; margin-bottom:15px;">+ Nuevo Producto</a>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>GME001</td>
+                        <td>Zelda: Tears of Kingdom</td>
+                        <td>$59.990</td>
+                        <td>
+                            <a href="admin-mostrar-producto.html" style="color:#28a745; margin-right:8px;">Ver</a>
+                            <a href="admin-editar-producto.html" style="color:#ffc107; margin-right:8px;">Editar</a>
+                            <a href="#" onclick="alert('Producto eliminado')" style="color:#ff4d4d;">Eliminar</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile</p>
+    </footer>
+</body>
+</html>

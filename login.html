@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Iniciar Sesión</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Game Store</h1>
+        <p>Tu tienda de videojuegos en Chile</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="registro.html">Registrarse</a>
+        <a href="admin-home.html">Panel Admin</a>
+        <a href="carrito.html" class="cart-status"> Carrito (<span class="cart-count">0</span>)</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2> Iniciar Sesión</h2>
+            <p>Ingresa a tu cuenta para gestionar tus compras.</p>
+            
+            <form id="formLogin" style="max-width: 400px; margin: 20px auto; text-align: left;">
+                <div style="margin-bottom: 15px;">
+                    <label for="emailLogin">Correo Electrónico:</label><br>
+                    <input type="email" id="emailLogin" name="email" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </div>
+
+                <div style="margin-bottom: 15px;">
+                    <label for="passwordLogin">Contraseña:</label><br>
+                    <input type="password" id="passwordLogin" name="password" required style="width: 100%; padding: 8px; margin-top: 5px;">
+                </div>
+
+                <button type="submit" class="btn-accion">Ingresar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/validaciones.js"></script>
+</body>
+</html>

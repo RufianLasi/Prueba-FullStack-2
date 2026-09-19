@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Registro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Registro de Cliente</h1>
+    </header>
+
+    
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="registro.html">Registrarse</a>
+        <a href="admin-home.html">Panel Admin</a>
+        <a href="carrito.html" class="cart-status"> Carrito (<span class="cart-count">0</span>)</a>
+    </nav>
+
+    <main>
+        <section style="max-width: 600px; margin: auto;">
+            <h2>Crear Cuenta</h2>
+            <form id="formRegistro" novalidate>
+                <div class="form-group">
+                    <label for="run">RUN / RUN (Sin puntos ni guión):</label>
+                    <input type="text" id="run" placeholder="19011022K">
+                    <span id="errorRun" class="mensaje-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu nombre">
+                    <span id="errorNombre" class="mensaje-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" placeholder="Tus apellidos">
+                    <span id="errorApellidos" class="mensaje-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" placeholder="ejemplo@duoc.cl">
+                    <span id="errorCorreo" class="mensaje-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="region">Región:</label>
+                    <select id="region">
+                        <option value="">Seleccione Región...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comuna">Comuna:</label>
+                    <select id="comuna">
+                        <option value="">Seleccione Comuna...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" placeholder="Av. Principal 123">
+                    <span id="errorDireccion" class="mensaje-error"></span>
+                </div>
+
+                <button type="submit" class="btn-accion">Registrarme</button>
+                <p id="mensajeExito" class="mensaje-exito" style="margin-top: 15px;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile</p>
+    </footer>
+
+    <script src="js/productos.js"></script>
+    <script src="js/validaciones.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>

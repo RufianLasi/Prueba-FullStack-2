@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store - Editar Producto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Editar Producto</h1>
+    </header>
+
+    <main class="admin-container">
+        <aside class="admin-sidebar">
+            <ul>
+                <li><a href="admin-productos.html">Volver a Lista</a></li>
+            </ul>
+        </aside>
+
+        <section class="admin-content">
+            <h2>Modificar Datos de Producto</h2>
+            <form id="formEditarProducto">
+                <div class="form-group">
+                    <label for="prodCodigoEdit">Código:</label>
+                    <input type="text" id="prodCodigoEdit" value="GME001" readonly style="opacity: 0.7;">
+                </div>
+
+                <div class="form-group">
+                    <label for="prodNombreEdit">Nombre:</label>
+                    <input type="text" id="prodNombreEdit" value="Zelda: Tears of Kingdom">
+                </div>
+
+                <div class="form-group">
+                    <label for="prodPrecioEdit">Precio ($):</label>
+                    <input type="number" id="prodPrecioEdit" value="59990">
+                </div>
+
+                <button type="button" onclick="alert('Cambios guardados con éxito'); window.location.href='admin-productos.html';" class="btn-accion">Actualizar Producto</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Game Store Chile</p>
+    </footer>
+</body>
+</html>
